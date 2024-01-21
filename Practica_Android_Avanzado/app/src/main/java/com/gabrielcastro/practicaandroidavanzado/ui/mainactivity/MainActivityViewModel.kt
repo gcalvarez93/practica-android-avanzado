@@ -20,7 +20,7 @@ class MainActivityViewModel @Inject constructor(
 ) : ViewModel() {
 
 
-    //LiveData states mannagers:
+    //LiveData states managers:
     //HeroesList
     private val _heroes = MutableLiveData<List<Heroe>>()
     val heroes: LiveData<List<Heroe>> get () = _heroes

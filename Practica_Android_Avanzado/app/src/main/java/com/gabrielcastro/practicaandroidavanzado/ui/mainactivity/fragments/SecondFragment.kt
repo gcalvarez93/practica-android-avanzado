@@ -43,7 +43,7 @@ class SecondFragment : Fragment(), OnMapReadyCallback {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
         return binding.root
@@ -52,8 +52,6 @@ class SecondFragment : Fragment(), OnMapReadyCallback {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        //  binding.tvNameDetail.text = args.heroeId.toString()
 
         viewModel.heroe.observe(viewLifecycleOwner){
             updateDetail(it)
@@ -99,8 +97,8 @@ class SecondFragment : Fragment(), OnMapReadyCallback {
 
         binding.ivHeroeDetail.load(heroe.picture){}
 
-        binding.tvNameDetail.text = heroe.name.toString()
-        binding.tvDescriptionDetail.text = heroe.description.toString()
+        binding.tvNameDetail.text = heroe.name
+        binding.tvDescriptionDetail.text = heroe.description
 
         if(heroe.isFavourite){
             binding.ibLikeDetail.load(R.mipmap.star_fill)

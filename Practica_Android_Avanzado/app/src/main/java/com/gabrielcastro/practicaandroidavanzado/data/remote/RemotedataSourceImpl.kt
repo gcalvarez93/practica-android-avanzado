@@ -6,9 +6,6 @@ import javax.inject.Singleton
 
 @Singleton
 class RemoteDataSourceImpl @Inject constructor(
-    //  private val moshi :
-    //  private val okHttpClient =
-// private val retrofit =
     private val api: DragonBallApi
 ) : RemoteDataSource {
     //The token is set to public to facilitate testing.
@@ -24,7 +21,7 @@ class RemoteDataSourceImpl @Inject constructor(
             if(token.isNotEmpty()){
                 val requestData = "Bearer $token"
                 return api.retrieveHeroes(requestData, GetHeroesRequestBody())
-            }else{
+            } else{
                 return mutableListOf()
             }
         }

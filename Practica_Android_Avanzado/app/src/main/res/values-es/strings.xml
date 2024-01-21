@@ -6,11 +6,11 @@
     <string name="second_fragment_label">Segundo Fragmento</string>
     <string name="next">Siguiente</string>
     <string name="previous">Anterior</string>
-    <string name="lorem_ipsum">Tocho Lorem ipsum</string>
+    <string name="lorem_ipsum">Lorem ipsum</string>
     <string name="login_email_hint">Correo Electrónico</string>
     <string name="login_password_hint">Contraseña</string>
-    <string name="login_save">Guardar los datos de sesión para hacer autologin.</string>
+    <string name="login_save">Guardar los datos de sesión</string>
     <string name="login_login_button">Acceder</string>
-    <string name="title_list">Enciclopedia Dragon Ball</string>
+    <string name="title_list">Dragon Ball</string>
     <string name="heroe_detail">Detalle</string>
 </resources>

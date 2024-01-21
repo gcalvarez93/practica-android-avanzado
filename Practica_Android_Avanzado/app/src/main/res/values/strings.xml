@@ -45,7 +45,7 @@
     </string>
     <string name="login_email_hint">E-mail</string>
     <string name="login_password_hint">Password</string>
-    <string name="login_save">Recordar.</string>
+    <string name="login_save">Remember.</string>
     <string name="login_login_button">Login</string>
     <string name="title_list">Dragon Ball</string>
     <string name="heroe_detail">Detail</string>
